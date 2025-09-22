@@ -1,0 +1,86 @@
+ul {
+    align-items: center;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    gap: 1rem; /* space between items */
+}
+
+li a {
+    
+    border: 1px solid whitesmoke;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #1fac5e;
+    transition: 0.2s;
+}
+
+
+ul li img {
+    width: 150px;          /* fixed width */
+    height: 150px;         /* fixed height */
+    object-fit: cover;     /* crop to fit, keeps aspect ratio */
+    display: block;
+     
+}
+li a:hover{
+    opacity: 0.8;
+    background-color: rgba(251, 246, 201, 0.914);
+    cursor: pointer;
+}
+
+  
+.stars {
+    display: flex;
+    gap: 2px;
+    font-size: 10px;
+    margin-bottom: .09rem;
+  }
+  
+  .stars span {
+    color: gray; /* color for empty stars */
+  }
+  
+  .stars span.filled {
+    color: gold; /* color for filled stars */
+  }
+  .content{
+    padding: .5rem 1rem;
+    position: relative;
+  }
+  .favourite{
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    font-size: 1.0rem;
+    color: red;
+  }
+  .favourite.not{
+    color: grey;
+  }
+  .name{
+    font-size: 15px;
+  }
+  .origins{
+    flex: .9rem;
+  }
+  .origins span{
+    border-radius: 2rem;
+    background-color: whitesmoke;
+    display: inline-block;
+    color: gray;
+    font-size: 10px;
+  }
+  .cook-time{
+    font-size: 9px;
+    flex: 3;
+  }
+  .price{
+    font-size: 15px;
+    color: #414141;
+    margin-top: 0.7rem;
+  }

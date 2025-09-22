@@ -1,0 +1,126 @@
+/* Detail Page Layout */
+.food-detail {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.food-card {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  max-width: 1000px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 2rem;
+  align-items: flex-start;
+}
+
+/* Image Styling */
+.food-card img {
+  width: 300px;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Details Styling */
+.food-card .details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.food-card .details h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.food-card .details p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.food-card .details p strong {
+  color: #222;
+  font-weight: 600;
+}
+
+/* Tags Section */
+.food-card .details .tags {
+  display: flex;
+  flex-wrap: wrap;   /* wrap instead of scrolling */
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+/* If your app-tags renders spans/buttons, style them like chips */
+.tag {
+  background-color: #bfdbfe; /* light blue */
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.8rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  color: #333;
+}
+
+/* Button Styling */
+.food-card .details button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.food-card .details button:hover {
+  background-color: #ff6b6b;
+  cursor: pointer;
+}
+
+/* Back Link */
+.food-card .details a {
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #1d4ed8;
+  font-weight: 500;
+}
+
+.food-card .details a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .food-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .food-card img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .food-card .details {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .food-card .details .tags {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,22 @@
+<!-- Detail View -->
+<div *ngIf="isDetailView && food" class="food-detail">
+    <div class="food-card">
+      <!-- Left: Image -->
+      <img [src]="food.imageUrl" alt="food.name" />
+  
+      <!-- Right: Details -->
+      <div class="details">
+        <h1>{{ food.name }}</h1>
+        <p><strong>Origin:</strong> {{ food.origins.join(', ') }}</p>
+        <p><strong>Cook Time:</strong> {{ food.cookTime }} minutes</p>
+        <p><strong>Price:</strong> {{ food.price }}</p>
+        
+        
+  
+        <button (click)="addToCart()">Add To Cart</button>
+        <br />
+        <a routerLink="/">← Back to Menu</a>
+      </div>
+    </div>
+  </div>
+  

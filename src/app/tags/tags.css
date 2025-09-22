@@ -1,0 +1,24 @@
+a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: rgb(15, 10, 10);
+    background-color: #a0caf7;
+    opacity: .8;
+    border-radius: 5px;
+    font-weight: 50;
+    font-size: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  a:hover {
+    background-color: #2789f1;
+    opacity: 1;
+  }
+  :host {
+    display: flex;
+    justify-content: center; /* center horizontally */
+    flex-wrap: nowrap;       /* keep in a single row */
+    gap: 10px;   
+    font-size: 20px;            /* space between tags */
+  }
+  
